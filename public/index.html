@@ -10,109 +10,98 @@
       <link rel="stylesheet" href="styles.css">
    </head>
    <body>
-  
-      
-               <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 70px;boder-radius:555px">
+          
+          <style>
+              body {
+                  font-family: georgia;
+              }
+          </style>     
 
-         </div>
-      </nav>
-      <div class="container" style="boder-radius:1100px">
-         <h1 class="col text-center" style="font-size: 20px; padding: 10px;">C3C FBSTATE </h1>
-         <form id="json-form" onsubmit="submitForm(event)">
-            <div class="row">
-               <div class="col-md-12">
+    
+              <div class="container">
+         <h1 class="col text-center" style="font-size: 20px; padding: 10px;">𝗔𝗗𝗠𝗜𝗡 𝗜𝗡𝗙𝗢</h1>
+       <img width="290px" height="200px" src="https://i.imgur.com/rhOtF1u.jpeg" style="border-radius:100px; position :center">
+       <br>
+       
+       <br>
+<a href="https://www.facebook.com/MetoushelaWalker" target="_blank">
+   <button type="button" style="width:290px; background :linear-gradient(skyblue,blue)">LE COMPTE FACEBOOK DE L'ADMINISTRATEUR</button>
+</a>
+</div>
+<br>
+    <!-- Content -->
+    <div class="container">
+                 <h1 class="col text-center" style="font-size: 20px; padding: 10px;">C3C FBSTATE </h1>
+             
+       
                   <textarea id="json-data" class="form-control centered-textarea center-placeholder" placeholder="" style="boder-radius:555px"></textarea>
-               </div>
+             
                <br>
-            </div>
-            <br>
-         </form>
+       
          <br>
          <p style=" margin-top: 10px">Bonjour ! Commencez par saisir votre cookie. Faites défiler vers le bas pour lire attentivement nos conditions générales et notre politique de confidentialité.</p>
       </div>
       <br>
-      <div class="container">
-         <h1 class="col text-center" style="font-size: 20px; padding: 10px;">𝗔𝗗𝗠𝗜𝗡 𝗜𝗡𝗙𝗢</h1>
-       <img width="250px" height="200px" src="https://i.imgur.com/rhOtF1u.jpeg" style="border-radius:100px; position :center">
-       <br>
-       
-       <br>
-<a href="https://www.facebook.com/profile.php?id=61564382117276" target="_blank">
-   <button type="button" style="width:260px; background :linear-gradient(skyblue,white)">LE COMPTE FACEBOOK DE L'ADMINISTRATEUR</button>
-</a>
-<br>
-<br>
-<br>
-         <div class="container" id="listOfCommands">
+
+
+
+    <!-- Commands Section -->
+    <div class="container" id="listOfCommands">
+        <div class="container" id="listOfCommands">
             <h1 style="font-size: 16px; padding: 10px;">𝐿𝐴 𝐿𝐼𝑆𝑇𝐸 𝐷𝐸𝑆 𝐶𝑂𝑀𝑀𝐴𝑁𝐷𝐸𝑆</h1>
-            <button class="btn btn-primary" onclick="selectAllCommands()">Select all commands</button>
+            <button class="btn btn-primary" onclick="selectAllCommands()" style="width:250px">Select all commands</button>
          </div>
-         <br>
-         <div class="container" id="listOfCommandsEvent">
-            <h1 style="font-size: 16px; padding: 10px;">𝐸𝑉𝐸𝑁𝑇 𝐶𝑂𝑀𝑀𝐴𝑁𝐷𝑆.</h1>
-            <button class="btn btn-primary" onclick="selectAllEvents()">Select all events</button>
-         </div>
-         <br>
+         
+       
+    <div class="container" id="prefixOfCommands">
          <div class="container" id="prefixOfCommands">
             <h1 style="font-size: 16px; padding: 10px;"> PREFIX 'non-prefix' vous pouvez mettre ou ne pas mettre un prefix</h1>
-            <input type="text" id="inputOfPrefix" style="width:200px;border-radius:50px">
+            <input type="text" id="inputOfPrefix" class="form-control" style="width:230px;border-radius:50px; background-color:darkblue">
          </div>
          <br>
-         <div class="container" id="adminOfCommands">
+    
+
+    
+        
+        <div class="container" id="adminOfCommands">
             <h1 style="font-size: 16px; padding: 10px;"> L'UID de l'administrateur de l'autobot vous permettrait d'en être administrateur</h1>
-            <input type="text" id="inputOfAdmin" style="width:200px;border-radius:50px">
+            <input type="text" id="inputOfAdmin" class="form-control" style="width:230px;border-radius:50px; background-color:darkblue">
+         </div>
+         
+            <br>
+            <div class="container">
+         <label style="font-size: 10px; display: flex; align-items: center; padding: 6px;witdth:55px">
+         <input type="checkbox" id="agreeCheckbox" style="margin-right: 10px; background-color:darkblue"> </label>
+         <p>En cochant cette case, je certifie avoir lu, compris et accepté les Conditions Générales.</p>
          </div>
          <br>
-         <label style="font-size: 14px; display: flex; align-items: center; padding: 22px">
-         <input type="checkbox" id="agreeCheckbox" style="margin-right: 10px;"> En cochant cette case, je certifie avoir lu, compris et accepté les Conditions Générales. </label>
-         <br>
-         <div>
+   
+ 
+ 
          <div class="col text-center">
             <button class="btn btn-primary" onclick="State()" disabled id="submitButton" style="width: 100%">﹝SUBMIT﹞</button>
          </div>
-      </div>
-      </div>
+      
+</div>
+</div<br>
 <br>
-      <script src="script.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-      
-      
-      
-      
-          <div class="container" style="position :center">
-      <form id="contactForm" style="position :center">
-    
-          <div>
-            <label for="name"></label>
-          <input type="text" id="name" placeholder="Your Name">
-        </div>
-        <div>
-          <label for="email"></label>
-          <input type="email" id="email" placeholder="ton e-mail" >
-        </div>
-    <div>
-    <input type="tel" placeholder="Your Phone"><br></div>
-    
-  
-  
-        <div>
-          <label for="message"></label>
-          <textarea id="message" rows="4" placeholder="Your Message"></textarea></i>
-   
-        </div>
+
+    <!-- Contact Form -->
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
         <button type="submit">envoyer</button>
-      
-    
-  </form>
+    </form>
 
-  <script src="script.js">
-
-    
+    <!-- Footer -->
+    <footer>
+        <p>Time: <span id="time"></span></p>
+        <p>Ping: <span id="ping"></span></p>
+    </footer>        
+  <script src="script2.js">    
   </script>
-  <style>
+<style>
 
       /* Animation */
 @keyframes fadeIn {
@@ -373,7 +362,6 @@ footer p {
 
 
 </style>
-<script src="script2.js"></script>
 
    </body>
-   </html>
+</html>
